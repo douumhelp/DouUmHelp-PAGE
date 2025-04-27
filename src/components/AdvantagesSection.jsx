@@ -1,4 +1,6 @@
 import React from 'react';
+import { Check } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const AdvantagesSection = () => {
   const advantages = [
@@ -9,20 +11,37 @@ const AdvantagesSection = () => {
   ];
 
   return (
-    <section className="px-6 py-16 bg-gray-100 text-gray-700">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Por que escolher nossa plataforma?</h2>
-        <ul className="space-y-4 text-left">
+    <section className="px-6 py-20 bg-white text-gray-700">
+      <motion.div
+        className="max-w-6xl mx-auto text-center"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="text-3xl md:text-5xl font-bold mb-14 text-yellow-douhelp">
+          Vantagens de usar o Dou Um Help
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {advantages.map((item, index) => (
-            <li key={index} className="flex items-center gap-3">
-              <div className="w-3 h-3 bg-yellow-douhelp rounded-full"></div>
-              <span>{item}</span>
-            </li>
+            <motion.div
+              key={index}
+              className="flex items-center bg-gray-50 p-6 rounded-3xl shadow-md hover:shadow-lg transition"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
+              <div className="flex-shrink-0">
+                <Check className="w-8 h-8 text-yellow-douhelp" />
+              </div>
+              <span className="ml-4 text-lg font-semibold text-gray-600">{item}</span>
+            </motion.div>
           ))}
-        </ul>
-      </div>
+        </div>
+      </motion.div>
     </section>
   );
-}
+};
 
 export default AdvantagesSection;

@@ -1,8 +1,11 @@
 import React from 'react';
+import DouUmHelpLogo from '../assets/logo.png';
+
 
 const HeroSection = () => {
   return (
     <section className="flex flex-col items-center justify-center text-center px-6 py-20">
+      <img src={DouUmHelpLogo} alt="Dou Um Help Logo" className="w-40 md:w-52 mb-6" />
       <h1 className="text-4xl md:text-6xl font-bold text-yellow-douhelp mb-4">
         Dou Um Help
       </h1>
@@ -19,6 +22,6 @@ const HeroSection = () => {
       </div>
     </section>
   );
-}
+};
 
 export default HeroSection;
