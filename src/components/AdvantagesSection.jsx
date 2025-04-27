@@ -2,7 +2,7 @@ import React from 'react';
 import { Check } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const AdvantagesSection = () => {
+export default function AdvantagesSection () {
   const advantages = [
     "Profissionais experientes",
     "Atendimento rápido",
@@ -43,5 +43,3 @@ const AdvantagesSection = () => {
     </section>
   );
 };
-
-export default AdvantagesSection;
