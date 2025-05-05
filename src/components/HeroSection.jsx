@@ -38,7 +38,7 @@ export default function HeroSection() {
         <a href="#cta" className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition">
           Peça seu Help!
         </a>
-        <a href="#services" className="border-2 border-yellow-douhelp hover:bg-yellow-douhelp-light text-yellow-douhelp hover:text-black font-semibold py-3 px-8 rounded-full transition">
+        <a href="https://prestador.douumhelp.com/" className="border-2 border-yellow-douhelp hover:bg-yellow-douhelp-light text-yellow-douhelp hover:text-black font-semibold py-3 px-8 rounded-full transition">
           Acessar como Prestador
         </a>
       </motion.div>
