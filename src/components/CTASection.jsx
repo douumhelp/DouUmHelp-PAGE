@@ -22,15 +22,18 @@ export default function CTASection () {
       >
         Tenha ajuda de um profissional qualificado de forma rápida e fácil.
       </motion.p>
-      <motion.button 
-        className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition"
+      <motion.a
+        href="https://wa.me/44998667449?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition inline-block text-center"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.6, duration: 0.8 }}
       >
         Falar com a Gente!
-      </motion.button>
+      </motion.a>
     </section>
   );
 }
