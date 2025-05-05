@@ -23,7 +23,7 @@ export default function CTASection () {
         Tenha ajuda de um profissional qualificado de forma rápida e fácil.
       </motion.p>
       <motion.a
-        href="https://wa.me/44998667449?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!"
+        href="https://wa.me/5544998667449?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition inline-block text-center"
