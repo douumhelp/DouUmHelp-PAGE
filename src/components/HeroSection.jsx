@@ -35,7 +35,7 @@ export default function HeroSection() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.8 }}
       >
-        <a href="#cta" className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition">
+        <a href="" className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition">
           Peça seu Help!
         </a>
         <a href="https://prestador.douumhelp.com/" className="border-2 border-yellow-douhelp hover:bg-yellow-douhelp-light text-yellow-douhelp hover:text-black font-semibold py-3 px-8 rounded-full transition">
