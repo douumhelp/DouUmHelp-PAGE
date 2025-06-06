@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function CTASection () {
   return (
@@ -37,18 +38,19 @@ export default function CTASection () {
           Falar com a Gente!
         </motion.a>
 
-        <motion.a
-        href="https://wa.me/5544998667449?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition"
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.6, duration: 0.8 }}
-      >
-          Documentação
-        </motion.a>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          <Link
+            to="/documentacao"
+            className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition inline-block"
+          >
+            Documentação
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

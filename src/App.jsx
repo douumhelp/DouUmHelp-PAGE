@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
@@ -7,10 +8,11 @@ import FeaturesSection from './components/FeaturesSection';
 import TestimonialsSection from './components/TestimonialsSection'; 
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
+import { Documentation } from './components/Documentation';
 
-const App = () => {
+const HomePage = () => {
   return (
-    <div className="bg-white font-outfit scroll-smooth">
+    <>
       <HeroSection />
       <AboutSection />
       <ServicesSection />
@@ -18,8 +20,21 @@ const App = () => {
       <FeaturesSection /> 
       <TestimonialsSection />
       <CTASection />
-      <Footer />
-    </div>
+    </>
+  );
+};
+
+const App = () => {
+  return (
+    <Router>
+      <div className="bg-white font-outfit scroll-smooth">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/documentacao" element={<Documentation />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
