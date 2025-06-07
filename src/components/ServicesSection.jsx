@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrench, Hammer, PlugZap } from 'lucide-react';
+import { Store, Users, Dog, Home, Laptop, Car } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function ServicesSection() {
@@ -15,11 +15,14 @@ export default function ServicesSection() {
         >
           Nossos Serviços
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-10">
           {[ 
-            { Icon: Wrench, title: "Reparos" },
-            { Icon: Hammer, title: "Montagem" },
-            { Icon: PlugZap, title: "Instalações" }
+            { Icon: Store, title: "Serviços Comerciais" },
+            { Icon: Users, title: "Serviço Humano" },
+            { Icon: Dog, title: "Serviço de Pet" },
+            { Icon: Home, title: "Serviço Doméstico" },
+            { Icon: Laptop, title: "Serviço de Software" },
+            { Icon: Car, title: "Serviço Veicular" }
           ].map(({ Icon, title }, index) => (
             <motion.div
               key={index}
@@ -27,10 +30,10 @@ export default function ServicesSection() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2, duration: 0.8 }}
+              transition={{ delay: index * 0.1, duration: 0.8 }}
             >
               <Icon className="text-yellow-douhelp w-16 h-16 mb-4" />
-              <h3 className="text-xl font-semibold">{title}</h3>
+              <h3 className="text-xl font-semibold text-center">{title}</h3>
             </motion.div>
           ))}
         </div>

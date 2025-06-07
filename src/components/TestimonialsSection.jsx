@@ -14,6 +14,18 @@ const testimonials = [
     name: 'Ana Paula',
     text: 'Fiquei impressionada com a agilidade e educação dos prestadores!'
   },
+  {
+    name: 'João Oliveira',
+    text: 'Precisava de ajuda com meu pet e encontrei um ótimo profissional. Super atencioso e cuidadoso!'
+  },
+  {
+    name: 'Mariana Santos',
+    text: 'O serviço de software resolveu meu problema rapidamente. Profissionais muito capacitados.'
+  },
+  {
+    name: 'Pedro Costa',
+    text: 'Encontrei um mecânico excelente para meu carro. Preço justo e trabalho de qualidade!'
+  }
 ];
 
 export default function TestimonialsSection() {
@@ -28,7 +40,7 @@ export default function TestimonialsSection() {
       >
         Depoimentos
       </motion.h2>
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-4">
         {testimonials.map((item, index) => (
           <motion.div 
             key={index} 
@@ -36,10 +48,10 @@ export default function TestimonialsSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: index * 0.2, duration: 0.8 }}
+            transition={{ delay: index * 0.1, duration: 0.8 }}
           >
-            <p className="text-gray-600 italic">"{item.text}"</p>
-            <p className="mt-4 font-semibold text-yellow-500">- {item.name}</p>
+            <p className="text-gray-600 italic mb-4">"{item.text}"</p>
+            <p className="font-semibold text-yellow-douhelp">- {item.name}</p>
           </motion.div>
         ))}
       </div>

@@ -1,8 +1,22 @@
 import React from 'react';
 import DouUmHelpLogo from '../assets/logo.png';
 import { motion } from 'framer-motion';
+import { Download } from 'lucide-react';
 
 export default function HeroSection() {
+  const handleDownloadApp = () => {
+    // O caminho começa com / porque é relativo à pasta public
+    const apkUrl = '/app/douumhelp.apk';
+    
+    // Criando um link temporário para download
+    const link = document.createElement('a');
+    link.href = apkUrl;
+    link.download = 'DouUmHelp.apk'; // Nome do arquivo que será baixado
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="flex flex-col items-center justify-center text-center px-6 py-20">
       <motion.img 
@@ -35,9 +49,13 @@ export default function HeroSection() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.8 }}
       >
-        <a href="" className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition">
+        <button 
+          onClick={handleDownloadApp}
+          className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition inline-flex items-center justify-center"
+        >
+          <Download className="w-5 h-5 mr-2" />
           Peça seu Help!
-        </a>
+        </button>
         <a href="https://prestador.douumhelp.com/" className="border-2 border-yellow-douhelp hover:bg-yellow-douhelp-light text-yellow-douhelp hover:text-black font-semibold py-3 px-8 rounded-full transition">
           Acessar como Prestador
         </a>
