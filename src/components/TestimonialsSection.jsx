@@ -30,9 +30,9 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 dark:bg-gray-800">
       <motion.h2 
-        className="text-3xl font-bold text-center text-black mb-12"
+        className="text-3xl font-bold text-center text-black dark:text-white mb-12"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -44,13 +44,13 @@ export default function TestimonialsSection() {
         {testimonials.map((item, index) => (
           <motion.div 
             key={index} 
-            className="bg-white p-6 rounded-2xl shadow-md"
+            className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-md"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1, duration: 0.8 }}
           >
-            <p className="text-gray-600 italic mb-4">"{item.text}"</p>
+            <p className="text-gray-600 dark:text-gray-300 italic mb-4">"{item.text}"</p>
             <p className="font-semibold text-yellow-douhelp">- {item.name}</p>
           </motion.div>
         ))}

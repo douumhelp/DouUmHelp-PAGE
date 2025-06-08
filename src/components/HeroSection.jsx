@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import DouUmHelpLogo from '../assets/logo.png';
+import DouUmHelpLogoDark from '../assets/logo-dark.png';
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
 
 export default function HeroSection() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Verificar o modo escuro inicial
+    const darkModeEnabled = document.documentElement.classList.contains('dark');
+    setIsDarkMode(darkModeEnabled);
+
+    // Observar mudanças no modo escuro
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'class') {
+          const darkModeEnabled = document.documentElement.classList.contains('dark');
+          setIsDarkMode(darkModeEnabled);
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   const handleDownloadApp = () => {
     // O caminho começa com / porque é relativo à pasta public
     const apkUrl = '/app/douumhelp.apk';
@@ -18,9 +44,9 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="flex flex-col items-center justify-center text-center px-6 py-20">
+    <section id="home" className="flex flex-col items-center justify-center text-center px-6 py-20 dark:bg-gray-900">
       <motion.img 
-        src={DouUmHelpLogo} 
+        src={isDarkMode ? DouUmHelpLogoDark : DouUmHelpLogo}
         alt="Dou Um Help Logo" 
         className="w-40 md:w-52 mb-6" 
         initial={{ opacity: 0, y: -50 }}
@@ -28,7 +54,7 @@ export default function HeroSection() {
         transition={{ duration: 0.8 }}
       />
       <motion.h1 
-        className="text-4xl md:text-6xl font-bold text-yellow-douhelp mb-4"
+        className="text-4xl md:text-6xl font-bold text-yellow-douhelp mb-4 dark:text-yellow-douhelp"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
@@ -36,7 +62,7 @@ export default function HeroSection() {
         Dou Um Help
       </motion.h1>
       <motion.p 
-        className="text-gray-input text-lg md:text-xl mb-6"
+        className="text-gray-input dark:text-gray-300 text-lg md:text-xl mb-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
@@ -51,12 +77,12 @@ export default function HeroSection() {
       >
         <button 
           onClick={handleDownloadApp}
-          className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition inline-flex items-center justify-center"
+          className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black dark:text-gray-900 font-semibold py-3 px-8 rounded-full transition inline-flex items-center justify-center"
         >
           <Download className="w-5 h-5 mr-2" />
           Peça seu Help!
         </button>
-        <a href="https://prestador.douumhelp.com/" className="border-2 border-yellow-douhelp hover:bg-yellow-douhelp-light text-yellow-douhelp hover:text-black font-semibold py-3 px-8 rounded-full transition">
+        <a href="https://prestador.douumhelp.com/" className="border-2 border-yellow-douhelp hover:bg-yellow-douhelp-light text-yellow-douhelp hover:text-black dark:hover:text-gray-900 font-semibold py-3 px-8 rounded-full transition dark:text-yellow-douhelp">
           Acessar como Prestador
         </a>
       </motion.div>

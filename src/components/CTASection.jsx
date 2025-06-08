@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 export default function CTASection () {
   return (
-    <section className="px-6 py-16 bg-white text-gray-700 text-center">
+    <section className="px-6 py-16 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 text-center">
       <motion.h2 
-        className="text-3xl font-bold mb-4"
+        className="text-3xl font-bold mb-4 dark:text-white"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -29,7 +29,7 @@ export default function CTASection () {
           href="https://wa.me/5544998667449?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition"
+          className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black dark:text-gray-900 font-semibold py-3 px-8 rounded-full transition"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -46,7 +46,7 @@ export default function CTASection () {
         >
           <Link
             to="/documentacao"
-            className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black font-semibold py-3 px-8 rounded-full transition inline-block"
+            className="bg-yellow-douhelp hover:bg-yellow-douhelp-light text-black dark:text-gray-900 font-semibold py-3 px-8 rounded-full transition inline-block"
           >
             Documentação
           </Link>

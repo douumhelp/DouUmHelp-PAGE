@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutSection () {
   return (
-    <section id="about" className="bg-gray-100 py-20 px-6">
+    <section id="about" className="bg-gray-100 dark:bg-gray-800 py-20 px-6">
       <div className="max-w-5xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -23,17 +23,17 @@ export default function AboutSection () {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="bg-white rounded-2xl shadow-lg p-8 md:p-12"
+          className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-8 md:p-12"
         >
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
+          <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
             <span className="font-semibold text-yellow-douhelp">O Dou Um Help!</span> é uma plataforma digital em desenvolvimento que tem como missão conectar pessoas que precisam de ajuda com quem sabe ajudar. Nosso foco está nos serviços domésticos, promovendo uma experiência <span className="font-semibold text-yellow-douhelp">prática</span>, <span className="font-semibold text-yellow-douhelp">segura</span> e <span className="font-semibold text-yellow-douhelp">acessível</span> para quem busca contratar ou oferecer serviços como reparos, manutenção, limpeza, montagem de móveis, entre outros.
           </p>
           
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed mt-8">
+          <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl leading-relaxed mt-8">
             Estamos construindo mais que um aplicativo. Estamos desenvolvendo uma <span className="font-semibold text-yellow-douhelp">rede de confiança, colaboração e oportunidades</span>.
           </p>
 
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed mt-8 italic">
+          <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl leading-relaxed mt-8 italic">
             Porque no final do dia, todo mundo precisa de um help. E o <span className="font-semibold text-yellow-douhelp">Dou Um Help!</span> está aqui pra isso.
           </p>
         </motion.div>

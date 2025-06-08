@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 
 export default function ServicesSection() {
   return (
-    <section className="px-6 py-16 bg-white text-gray-700">
+    <section className="px-6 py-16 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2 
-          className="text-3xl font-bold mb-10"
+          className="text-3xl font-bold mb-10 dark:text-white"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -33,7 +33,7 @@ export default function ServicesSection() {
               transition={{ delay: index * 0.1, duration: 0.8 }}
             >
               <Icon className="text-yellow-douhelp w-16 h-16 mb-4" />
-              <h3 className="text-xl font-semibold text-center">{title}</h3>
+              <h3 className="text-xl font-semibold text-center dark:text-white">{title}</h3>
             </motion.div>
           ))}
         </div>

@@ -11,7 +11,7 @@ export default function AdvantagesSection () {
   ];
 
   return (
-    <section className="px-6 py-20 bg-white text-gray-700">
+    <section className="px-6 py-20 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300">
       <motion.div
         className="max-w-6xl mx-auto text-center"
         initial={{ opacity: 0, y: 50 }}
@@ -26,7 +26,7 @@ export default function AdvantagesSection () {
           {advantages.map((item, index) => (
             <motion.div
               key={index}
-              className="flex items-center bg-gray-50 p-6 rounded-3xl shadow-md hover:shadow-lg transition"
+              className="flex items-center bg-gray-50 dark:bg-gray-800 p-6 rounded-3xl shadow-md hover:shadow-lg transition"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -35,7 +35,7 @@ export default function AdvantagesSection () {
               <div className="flex-shrink-0">
                 <Check className="w-8 h-8 text-yellow-douhelp" />
               </div>
-              <span className="ml-4 text-lg font-semibold text-gray-600">{item}</span>
+              <span className="ml-4 text-lg font-semibold text-gray-600 dark:text-gray-300">{item}</span>
             </motion.div>
           ))}
         </div>

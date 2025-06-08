@@ -9,6 +9,7 @@ import TestimonialsSection from './components/TestimonialsSection';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import { Documentation } from './components/Documentation';
+import ThemeToggle from './components/ThemeToggle';
 
 const HomePage = () => {
   return (
@@ -27,7 +28,8 @@ const HomePage = () => {
 const App = () => {
   return (
     <Router>
-      <div className="bg-white font-outfit scroll-smooth">
+      <div className="bg-white dark:bg-gray-900 font-outfit scroll-smooth min-h-screen transition-colors duration-200">
+        <ThemeToggle />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/documentacao" element={<Documentation />} />

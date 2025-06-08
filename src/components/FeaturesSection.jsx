@@ -37,7 +37,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="bg-gray-100 py-20 px-6">
+    <section className="bg-gray-100 dark:bg-gray-800 py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
         <motion.div
           className="mb-16"
@@ -49,7 +49,7 @@ export default function FeaturesSection() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-douhelp to-yellow-douhelp-light">
             Por que escolher o Dou Um Help?
           </h2>
-          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
             No <span className="font-semibold text-yellow-douhelp">Dou Um Help!</span>, 
             não oferecemos apenas um serviço — oferecemos confiança, praticidade e impacto real na vida das pessoas.
           </p>
@@ -59,7 +59,7 @@ export default function FeaturesSection() {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-start text-left hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-gray-900 rounded-2xl shadow-md p-8 flex flex-col items-start text-left hover:shadow-lg transition-shadow duration-300"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -69,9 +69,9 @@ export default function FeaturesSection() {
                 {React.createElement(feature.icon, {
                   className: "text-yellow-douhelp w-8 h-8 mr-3 flex-shrink-0"
                 })}
-                <h3 className="text-xl font-semibold text-gray-900">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{feature.title}</h3>
               </div>
-              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>
