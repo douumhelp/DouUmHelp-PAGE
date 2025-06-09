@@ -32,7 +32,7 @@ export function Documentation() {
 
   const handleDownloadDocs = () => {
     // O caminho começa com / porque é relativo à pasta public
-    const docsUrl = '/docs/documentacao.pdf';
+    const docsUrl = '/docs/DouUmHelp-Documentacao.pdf';
     
     // Criando um link temporário para download
     const link = document.createElement('a');
@@ -45,7 +45,7 @@ export function Documentation() {
 
   const handleDownloadDiagram = () => {
     // O caminho começa com / porque é relativo à pasta public
-    const diagramUrl = '/docs/diagrama.pdf';
+    const diagramUrl = '/docs/DouUmHelp-Diagrama.pdf';
     
     // Criando um link temporário para download
     const link = document.createElement('a');
