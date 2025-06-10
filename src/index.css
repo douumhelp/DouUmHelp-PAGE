@@ -5,4 +5,48 @@
 html {
     scroll-behavior: smooth;
   }
+
+/* Estilização da scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Classe para esconder a scrollbar mas manter a funcionalidade */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Ajuste para o padding do conteúdo quando a navegação está fixa */
+section {
+  scroll-margin-top: 2rem;
+}
+
+/* Transição suave para links de navegação */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Efeito de hover para links de navegação */
+a:hover {
+  transform: translateY(-1px);
+}
   
