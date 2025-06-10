@@ -9,7 +9,7 @@ const DevelopersSection = () => {
     {
       name: "Eduardo Aguiar",
       role: "Gestor de Projetos e Produto",
-      image: "./src/assets/FotoDevs/Edu.png",
+      image: "https://iili.io/FFtvuCN.jpg",
       github: "https://github.com/EduHOA",
       linkedin: "https://www.linkedin.com/in/edu-aguiar/",
       instagram: "https://www.instagram.com/eduaguiar.h/",
@@ -21,7 +21,7 @@ const DevelopersSection = () => {
     {
       name: "Nathan Schiavon",
       role: "Desenvolvedor Full Stack",
-      image: "./src/assets/FotoDevs/Nathan.png",
+      image: "https://iili.io/FFtvxTv.jpg",
       github: "https://github.com/SchiavonNathan",
       linkedin: "https://www.linkedin.com/in/schiavonnathan/",
       instagram: "https://www.instagram.com/nathanschiavon_/",
@@ -32,7 +32,7 @@ const DevelopersSection = () => {
     {
       name: "Lucas Foppa ",
       role: "Desenvolvedor Full Back-end",
-      image: "./src/assets/FotoDevs/Foppa.png",
+      image: "https://iili.io/FFtvAGI.jpg",
       github: "https://github.com/Elebeg",
       linkedin: "https://www.linkedin.com/in/lucas-schuler-foppa-24723b272/",
       instagram: "https://www.instagram.com/lucasfoppa9/",
@@ -43,7 +43,7 @@ const DevelopersSection = () => {
     {
       name: "Isaac Arantes",
       role: "Desenvolvedor Full Stack",
-      image: "./src/assets/FotoDevs/Isaac.png",
+      image: "https://iili.io/FFtvIQp.jpg",
       github: "https://github.com/isaac-arantes-t",
       linkedin: "https://www.linkedin.com/in/isaac-arantes-tobbin-a713ba26a/",
       instagram: "https://www.instagram.com/isaac.arantes.t/",
@@ -54,7 +54,7 @@ const DevelopersSection = () => {
     {
       name: "Matheus Nunes",
       role: "Desenvolvedor Front End Mobile",
-      image: "./src/assets/FotoDevs/Nunes.png",
+      image: "https://iili.io/FFtvzjR.jpg",
       github: "https://www.linkedin.com/in/matheusnunesinacio/",
       linkedin: "https://linkedin.com/in/SEU_USUARIO_LINKEDIN",
       instagram: "",
@@ -65,7 +65,7 @@ const DevelopersSection = () => {
     {
       name: "Matheus Souza",
       role: "Desenvolvedor Front End Web e QA",
-      image: "./src/assets/FotoDevs/Estagi.png",
+      image: "https://iili.io/FFtvCva.jpg",
       github: "https://github.com/msouza009",
       linkedin: "https://www.linkedin.com/in/matheus-souza-1a0622235/",
       instagram: "https://www.instagram.com/msouza009/",
