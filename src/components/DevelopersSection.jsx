@@ -7,71 +7,71 @@ const DevelopersSection = () => {
 
   const developers = [
     {
-      name: "Eduardo",
-      role: "Desenvolvedor Full Stack",
-      image: "https://avatars.githubusercontent.com/u/SEU_ID_GITHUB",
-      github: "https://github.com/SEU_USUARIO_GITHUB",
-      linkedin: "https://linkedin.com/in/SEU_USUARIO_LINKEDIN",
-      instagram: "https://instagram.com/SEU_USUARIO_INSTAGRAM",
-      email: "eduardo@douumhelp.com",
-      bio: "Desenvolvedor Full Stack apaixonado por criar soluções inovadoras e impactantes. Com experiência em desenvolvimento web e mobile, focado em criar experiências digitais excepcionais.",
-      skills: ["React", "Node.js", "TypeScript", "Python", "AWS", "Docker"],
+      name: "Eduardo Aguiar",
+      role: "Gestor de Projetos e Produto",
+      image: "./src/assets/FotoDevs/Edu.png",
+      github: "https://github.com/EduHOA",
+      linkedin: "https://www.linkedin.com/in/edu-aguiar/",
+      instagram: "https://www.instagram.com/eduaguiar.h/",
+      email: "eduaguiar@douumhelp.com",
+      bio: "Apaixonado por transformar ideias em soluções reais, atuo como líder no projeto Dou Um Help!, coordenando o time de desenvolvimento, garantindo entregas alinhadas aos objetivos do produto e às necessidades dos usuários.\nCom uma abordagem estratégica e colaborativa, integro áreas técnicas e de negócio, conduzindo o planejamento de sprints, validação de funcionalidades, gestão de backlog e acompanhamento de métricas.\nAlém de gerenciar pessoas, Edu impulsiona propósito — conectando tecnologia com inclusão e praticidade para o dia a dia das pessoas.",
+      skills: ["Gestão de Projetos", "React", "Node.js", "TypeScript", "Gestão de Equipe"],
       website: "https://seu-site.com"
     },
     {
-      name: "Integrante 2",
-      role: "Desenvolvedor Front-end",
-      image: "https://avatars.githubusercontent.com/u/SEU_ID_GITHUB",
-      github: "https://github.com/SEU_USUARIO_GITHUB",
-      linkedin: "https://linkedin.com/in/SEU_USUARIO_LINKEDIN",
-      instagram: "https://instagram.com/SEU_USUARIO_INSTAGRAM",
-      email: "integrante2@douumhelp.com",
-      bio: "Desenvolvedor Front-end especializado em criar interfaces modernas e responsivas. Experiência em frameworks modernos e design de UI/UX.",
-      skills: ["React", "Vue.js", "JavaScript", "CSS", "HTML", "UI/UX"]
+      name: "Nathan Schiavon",
+      role: "Desenvolvedor Full Stack",
+      image: "./src/assets/FotoDevs/Nathan.png",
+      github: "https://github.com/SchiavonNathan",
+      linkedin: "https://www.linkedin.com/in/schiavonnathan/",
+      instagram: "https://www.instagram.com/nathanschiavon_/",
+      email: "nathanschiavon@douumhelp.com",
+      bio: "Atuo no projeto Dou Um Help! desenvolvendo tanto o front-end quanto o back-end da plataforma, sendo peça-chave na integração entre as interfaces do cliente, prestador e a lógica do sistema.\nCom domínio em tecnologias web e backend, contribuo para a criação de funcionalidades robustas, intuitivas e eficientes — desde a construção de APIs até a entrega de experiências fluídas na interface. Além da parte técnica, me destaco por uma visão de produto e capacidade de adaptação em ambientes colaborativos e ágeis.\nApaixonado por tecnologia e propósito, ele desenvolve mais do que código: entrega valor real para quem precisa de ajuda e para quem quer ajudar.",
+      skills: ["React", "Node.js", "TypeScript", "Infraestrutura de TI", "Banco de Dados"]
     },
     {
-      name: "Integrante 3",
-      role: "Desenvolvedor Back-end",
-      image: "https://avatars.githubusercontent.com/u/SEU_ID_GITHUB",
-      github: "https://github.com/SEU_USUARIO_GITHUB",
-      linkedin: "https://linkedin.com/in/SEU_USUARIO_LINKEDIN",
-      instagram: "https://instagram.com/SEU_USUARIO_INSTAGRAM",
-      email: "integrante3@douumhelp.com",
-      bio: "Desenvolvedor Back-end focado em criar APIs robustas e escaláveis. Experiência em arquitetura de sistemas e banco de dados.",
-      skills: ["Node.js", "Python", "Java", "SQL", "MongoDB", "AWS"]
+      name: "Lucas Foppa ",
+      role: "Desenvolvedor Full Back-end",
+      image: "./src/assets/FotoDevs/Foppa.png",
+      github: "https://github.com/Elebeg",
+      linkedin: "https://www.linkedin.com/in/lucas-schuler-foppa-24723b272/",
+      instagram: "https://www.instagram.com/lucasfoppa9/",
+      email: "lucasfoppa@douumhelp.com",
+      bio: "Desenvolvedor Backend focado em performance, segurança e estruturação de sistemas escaláveis.\nSou responsável por arquitetar e implementar o núcleo lógico do Dou Um Help!, garantindo que a plataforma funcione de forma estável, segura e eficiente por trás das interfaces visíveis.\nCom profundo conhecimento em banco de dados, autenticação,aplicações em tempo real, criação de APIs e modelagem de entidades, desenvolvo a base que sustenta as principais funcionalidades da plataforma — como cadastro, sistema de ordens, comunicação em tempo real.\nDomínio técnico com atenção aos detalhes, contribuindo para a robustez do projeto e a qualidade das entregas. Meu trabalho garante que cada requisição feita no app seja atendida com precisão, confiabilidade e desempenho.",
+      skills: ["Node.js", "TypeScript", "JavaScript", "Websocket", "Empreendedorismo"]
     },
     {
-      name: "Integrante 4",
-      role: "UI/UX Designer",
-      image: "https://avatars.githubusercontent.com/u/SEU_ID_GITHUB",
-      github: "https://github.com/SEU_USUARIO_GITHUB",
-      linkedin: "https://linkedin.com/in/SEU_USUARIO_LINKEDIN",
-      instagram: "https://instagram.com/SEU_USUARIO_INSTAGRAM",
-      email: "integrante4@douumhelp.com",
-      bio: "Designer UI/UX com foco em criar experiências digitais intuitivas e agradáveis. Especialista em design de interfaces e pesquisa de usuários.",
-      skills: ["Figma", "Adobe XD", "UI Design", "UX Research", "Prototipagem", "Design System"]
+      name: "Isaac Arantes",
+      role: "Desenvolvedor Full Stack",
+      image: "./src/assets/FotoDevs/Isaac.png",
+      github: "https://github.com/isaac-arantes-t",
+      linkedin: "https://www.linkedin.com/in/isaac-arantes-tobbin-a713ba26a/",
+      instagram: "https://www.instagram.com/isaac.arantes.t/",
+      email: "isaacarantes@douumhelp.com",
+      bio: "Desenvolvedor Full Stack com expertise em banco de dados e foco em soluções escaláveis e bem estruturadas.\nAtuo no Dou Um Help! integrando o desenvolvimento do front e back-end com domínio técnico em modelagem, performance e segurança de dados. É responsável por estruturar as entidades e relações que sustentam toda a lógica do sistema, desde o cadastro até as ordens de serviço, propostas e avaliações.\nAlém de codar funcionalidades completas, Isaac garante que os dados trafeguem de forma eficiente, consistente e segura entre o app e o banco PostgreSQL. Habilidade em alinhar regras de negócio com arquitetura de dados fortalece a base técnica da plataforma.\nCom olhar analítico e pensamento estratégico, contribuo para um sistema sólido, fluido e preparado para crescer.",
+      skills: ["Banco de Dados", "Node.js", "TypeScript", "JavaScript", "React Native"]
     },
     {
-      name: "Integrante 5",
-      role: "Desenvolvedor Mobile",
-      image: "https://avatars.githubusercontent.com/u/SEU_ID_GITHUB",
-      github: "https://github.com/SEU_USUARIO_GITHUB",
+      name: "Matheus Nunes",
+      role: "Desenvolvedor Front End Mobile",
+      image: "./src/assets/FotoDevs/Nunes.png",
+      github: "https://www.linkedin.com/in/matheusnunesinacio/",
       linkedin: "https://linkedin.com/in/SEU_USUARIO_LINKEDIN",
-      instagram: "https://instagram.com/SEU_USUARIO_INSTAGRAM",
-      email: "integrante5@douumhelp.com",
-      bio: "Desenvolvedor Mobile especializado em criar aplicativos nativos e híbridos. Experiência em desenvolvimento iOS e Android.",
-      skills: ["React Native", "Swift", "Kotlin", "Flutter", "Mobile UI", "APIs"]
+      instagram: "",
+      email: "matheusnunes@douumhelp.com",
+      bio: "Desenvolvedor Front-end Mobile especializado em React Native, com foco em usabilidade, performance e experiência do usuário.\nSou responsável pelo desenvolvimento do aplicativo do Dou Um Help!, garantindo que cada tela entregue fluidez, acessibilidade e eficiência para quem utiliza a plataforma.\nCom domínio em React Native e atenção aos padrões de design mobile, transformo requisitos técnicos em interfaces intuitivas e responsivas, conectando o usuário final a funcionalidades como cadastro, login, solicitação de serviços, chat e avaliações.\nAlém do código, ele contribui ativamente na melhoria da experiência do usuário (UX), aplicando boas práticas de navegação, animações suaves.\nMeu trabalho é essencial para que o app seja funcional, agradável e confiável na palma da mão.",
+      skills: ["React Native", "React", "Design", "Prototipagem", "Mobile UI"]
     },
     {
-      name: "Integrante 6",
-      role: "Desenvolvedor DevOps",
-      image: "https://avatars.githubusercontent.com/u/SEU_ID_GITHUB",
-      github: "https://github.com/SEU_USUARIO_GITHUB",
-      linkedin: "https://linkedin.com/in/SEU_USUARIO_LINKEDIN",
-      instagram: "https://instagram.com/SEU_USUARIO_INSTAGRAM",
-      email: "integrante6@douumhelp.com",
-      bio: "Engenheiro DevOps focado em automação, infraestrutura como código e CI/CD. Experiência em cloud computing e segurança.",
-      skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "Terraform", "Linux"]
+      name: "Matheus Souza",
+      role: "Desenvolvedor Front End Web e QA",
+      image: "./src/assets/FotoDevs/Estagi.png",
+      github: "https://github.com/msouza009",
+      linkedin: "https://www.linkedin.com/in/matheus-souza-1a0622235/",
+      instagram: "https://www.instagram.com/msouza009/",
+      email: "matheussouza@douumhelp.com",
+      bio: "Desenvolvedor Front-end Web e Tester (QA), com foco em performance visual e qualidade de entrega.\nAtuo no Dou Um Help! desenvolvendo a interface web da plataforma com React, garantindo uma experiência fluida, funcional e alinhada à identidade do projeto — especialmente voltada ao painel do prestador de serviços.\nAlém de construir componentes reutilizáveis e responsivos, também atuo como Quality Assurance, sendo responsável por testar funcionalidades, identificar bugs e validar o comportamento esperado do sistema antes das entregas.\nCom atenção aos detalhes e forte senso de usabilidade, contribuo tanto para o visual da aplicação quanto para a confiança e estabilidade do produto final, unindo tecnologia com qualidade.",
+      skills: ["React", "Quality Assurance", "QA", "Prototipagem", "Cypress Automation"]
     }
   ];
 
@@ -111,7 +111,7 @@ const DevelopersSection = () => {
                   <p className="text-lg text-yellow-douhelp font-medium text-center mb-4">
                     {dev.role}
                   </p>
-                  <p className="text-gray-600 dark:text-gray-300 text-center mb-6 line-clamp-3">
+                  <p className="text-gray-600 dark:text-gray-300 text-center mb-6 line-clamp-3 whitespace-pre-line">
                     {dev.bio}
                   </p>
                 </div>
